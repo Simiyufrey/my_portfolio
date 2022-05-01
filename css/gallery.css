@@ -1,0 +1,78 @@
+*
+{
+    margin: 0;
+    max-width: 100vw;
+    padding: 0;
+}
+#gallery
+{
+    color: yellowgreen;
+    border-bottom: 1px solid rgb(86, 197, 53);
+    padding-bottom: 5px;
+}
+.myimages
+{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 8px;
+    row-gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90vw;
+}
+.myimages a{
+    width: 100%;
+
+}
+.myimages a button{
+    position: absolute;
+    width: 20px;
+    background-color: rgb(83, 122, 204);
+    margin-left:18% ;
+    margin-top: 20%;
+    height: auto;
+    display: none;
+    
+}
+.myimages a:hover button
+{
+    display: block;
+}
+.myimages a button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+.myimages a img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    margin-top: 30px;
+}
+footer a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    margin-left: 30px;
+}
+@media  screen and (max-width:700px)
+ {
+    .myimages
+    {  display: grid;
+        grid-template-columns: 1fr;
+    }
+    .myimages a button img
+    {
+        margin-left: 50px;
+        width: 30px;
+        height: 20px;
+        margin-top: 50px;
+        display: block;
+    }
+    .myimages a img
+    {
+        width: 100%;
+        height: 400px;
+    }
+}

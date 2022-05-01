@@ -1,0 +1,103 @@
+.university
+{
+    width: 70vw;
+    margin-left: 10vw;
+    padding: 20px;
+    justify-content: flex-start;
+}
+.university h3{
+    display: block;
+    text-align: center;
+}
+body
+{
+    margin: 0;
+    overflow-x: hidden;
+    background: -webkit-linear-gradient( rgba(267,67,89 ,0.6), rgba(121, 16, 202, 0.5));
+}
+
+.nav-bar
+{
+    position: relative;
+    width: 90vw;
+    display: inline-block;
+    margin-top: 20px;
+    height: 70px;
+    margin-left: 10px;
+    padding-left: 10px;
+    background-color: rgb(187, 10, 175);
+    border-radius: 30px;
+    
+    
+}
+.nav-bar .links{
+    position: absolute;
+    margin-top: 30px;
+}
+.nav-bar .links a{
+ 
+ text-decoration: none;
+   margin-left: 20px;
+  color: #003;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+   
+}
+.nav-bar .links a:hover{
+ border-bottom: 1px solid maroon;
+  -webkit-background-clip: text;
+  background-image: -webkit-linear-gradient(left,orange,green,yellow,rgb(44, 111, 165),cyan);
+ -webkit-background-clip: text;
+ color: transparent;
+
+}
+
+footer{
+   
+}
+footer a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(17, 160, 226);
+    margin-left: 30px;
+}
+footer ul{
+    width: 100vw;
+    height: 70px;
+    border-radius: 30px;
+   
+}
+
+footer {
+    margin-top: 50vh;
+    width: 100vw;
+    height: 60px;
+    background-image: -webkit-linear-gradient(left,Tomato,orange,greenyellow);
+    border-radius: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+   }
+   ul{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 10px;
+   }
+   li{
+       list-style: none;
+       display: inline-flex;
+       margin-left: 10px;
+   }
+   .copy
+   {
+       font-size: 1.4rem;
+       font-family: sans-serif;
+      background-image: -webkit-linear-gradient(left,rgb(85, 55, 219),green,black,rgb(216, 31, 185));
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 900;
+      font-style: italic;
+    }
+   

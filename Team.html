@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background info</title>
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+    <nav class="nav-bar">
+
+        <div class="links">
+            <a href="index.html" >Home</a>
+            <a href="Team.html" target="_SELF">Team</a>
+           
+        </div>
+        
+       
+    </nav>
+    
+<h3>My Team </h3>
+<p id="description">The Named people below are the team that i work with in Z softwares company
+    formed to develop softwares and  good websites
+</p>
+<div class="friends">
+  
+   <div class="fre">
+       <img src="images/faiza2.jpg" alt="" >
+       <article class="art3">
+            Faiza (left) full stack software engineer
+       </article>
+   </div>
+   <div class="fre">
+       <img src="images/omar.jpg" alt="">
+       <article class="art3">
+           Omar he is a full stack  web developer  
+       </article>
+   </div>
+   <div class="fre">
+    <img src="images/bram.jpg" alt="">
+    <article  class="art3" id="art3">
+        Bramwel specialized in electronics and hardware design
+    </article>
+   </div>
+</div>
+<footer>
+    <ul>
+        <li class="copy">&copy Godfrey Giddy</li>
+       
+    </ul>
+</footer>
+<script>
+    
+window.addEventListener("scroll",()=>
+{
+     console.log(this.scrollY);
+    if(window.scrollY>200 && window.scrollY<400)
+    {
+       
+        document.querySelector("body").style.background="rgba(123,251,70,0.5)";
+    }
+    else if(window.scrollY> 400 && window.scrollY <600)
+    {
+        document.querySelector("body").style.background="rgba(120,102,110,0.4)";
+    }
+    else if(window.scrollY > 600 && window.scrollY <800 )
+    {
+        document.querySelector("body").style.background="violet";
+        
+    }
+    else if(window.scrollY > 600)
+    {
+        document.querySelector("body").style.background="rgba(150,219,10,0.2)";
+        
+    }
+   
+})
+</script>
+</body>
+</html>

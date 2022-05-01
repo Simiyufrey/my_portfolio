@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Poiret+One&family=Pontano+Sans&display=swap');
+
+*
+{
+
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    box-sizing: border-box;
+    box-shadow: 10px black;
+    scroll-behavior: smooth;
+}
+.nav-bar
+{
+    position: relative;
+    z-index: 20;
+    width: 90vw;
+    display: inline-block;
+    margin-top: 20px;
+    height: 70px;
+    margin-left: 50px;
+    padding-left: 20px;
+    background-color: rgb(187, 10, 175);
+    border-radius: 30px;
+    
+    
+}
+.nav-bar .links{
+    position: absolute;
+    margin-top: 30px;
+}
+.nav-bar .links a{
+ 
+ text-decoration: none;
+   margin-left: 20px;
+  color: #003;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+   
+}
+.nav-bar .links a:hover{
+ border-bottom: 1px solid maroon;
+  -webkit-background-clip: text;
+  background-image: -webkit-linear-gradient(left,orange,green,yellow,rgb(44, 111, 165),cyan);
+ -webkit-background-clip: text;
+ color: transparent;
+
+}
+.nav-bar .icons-contacts
+{
+    position: relative;
+    display: inline;
+    margin-left: 70vw;
+    margin-top: 20px;
+}
+.icons-contacts img
+{
+    width: 20px;
+    margin-left: 30px;
+    height: 20px;
+    cursor: pointer;
+    background-color: lightpink;
+    padding: 3px;
+    margin-top: 20px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.icons-contacts img:hover
+{
+    background-color :lightgrey;
+
+}
+body{
+    background-image: url("images/comp.jpg");
+    background-color: rgb(179, 126, 29);
+    background-size:contain;
+    transition: all 0.5s;
+}
+#greetings
+{
+    margin-left: 50px;
+    font-family: serif;
+    color: #007;
+}
+.nav-bar .icons-contacts img:hover{
+    transform: skew(20deg);
+}
+.me
+{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    width: 90vw;
+    height: auto;
+    margin-left: 5vw;
+    position: relative;
+    
+}
+.me .myimage
+{
+    width: 400px;
+    height: 500px;
+    margin-top: 5%;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+  
+    background:linear-gradient(rgba(129,178,102),rgba(170,90,239),rgba(240,70,78));
+}
+.me .myimage img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    
+}
+.cuboid
+{
+    display: block;
+}
+.me h3{
+    margin-top: 20%;
+    margin-left: 10%;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    display: block;
+    font-size: 1.5rem;
+}
+#dynamic
+{
+    width: 300px;
+    height: 50px;
+    text-align: start;
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 1.4rem;
+    color:  rgb(32, 17, 19);
+    margin-bottom: 10px;
+    
+}
+.box{
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    position: relative;
+    display: block;
+    transform-style: preserve-3d;
+    perspective: 1200px;
+    transition: all 0.7s;
+   animation: animatebox 10s infinite;
+   margin-top: 50px;
+
+}
+.box:hover
+{
+    transition: all 0.5s;
+    transform: rotateY(360deg);
+    
+}
+.box .right
+{
+    position: absolute;
+    background: plum;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 5px white;
+    transform: translateY(-50%) translateX(50%)  rotateY(-90deg);
+}
+.box .left
+{
+    position: absolute;
+    background: rgb(115, 133, 214);
+    width: 100%;
+    height: 100%;
+box-shadow: inset 0 0 5px white;   
+ transform: translateY(-50%) translateX(-50%) rotateY(90deg) translate(20px);
+}
+.box .front
+{
+    position: absolute;
+    background: rgb(98, 163, 201);
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%) translateX(0) ;
+    box-shadow: inset 0 0 5px white;
+    text-align: center;
+    justify-content: center;
+}
+.box .bottom
+{
+    position: absolute;
+    background: rgb(107, 199, 54);
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 5px white;
+   transform:   rotateX(90deg);
+}
+.box .top
+{
+    position: absolute;
+    background: rgb(14, 1, 7);
+    width: 100%;
+    height: 100%;
+box-shadow: inset 0 0 5px white;   
+ transform: translateY(-100%) rotateX(-90deg);
+}
+.box .back
+{
+    position: absolute;
+    background: rgb(218, 197, 12);
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform:  translateY(-50%)  rotateX(180deg);
+    box-shadow: inset 0 0 5px white;
+    text-align: center;
+}
+footer {
+    width: 97vw;
+    margin-left: 1vw;
+    height: 60px;
+    background-image: -webkit-linear-gradient(left,Tomato,orange,greenyellow);
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 5px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px ;
+   }
+   ul{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 10px;
+   }
+   li{
+       list-style: none;
+       display: inline-flex;
+       margin-left: 10px;
+   }
+   footer a{
+       text-decoration: none;
+       color: rgb(255, 240, 255);
+   }
+   .copy
+   {
+       margin-top: -10px;
+   }
+   .sliders
+   {
+       position: relative;
+       width: 600px;
+       height: 400px;
+       margin-left: 20px;
+       overflow: hidden;
+       margin-top: 20px;
+       display: inline-flex;
+       margin-bottom: 10px;
+       background:radial-gradient(rgba(0,0,78,0.2),rgba(34,68,39,0.5));
+   }
+   .sliders .slider{
+      width: 500px;
+      position: absolute;
+      margin-left: 50px;
+      transition: all 2s;
+   }
+   .sliders .slider img
+   {
+       width: 500px;
+       height: 400px;
+       transition: all 2s;
+   }
+   #id
+   {
+       content: '';
+       animation : slide 3s infinite
+   }
+   #about
+   {
+       width: 95vw;
+       background:rgb(130, 202, 202);
+       border-radius: 10px;
+       box-shadow: inset 2 4 10px rgb(196, 73, 73);
+       display: block;
+       margin-top: 10px;
+       position: relative;
+   }
+   #about .header
+   {
+        width: 100%;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        background-color: transparent;
+        padding-bottom: 20px;
+   }
+   #about .myself
+   {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       padding-bottom: 10px;
+   }
+   #about .myself h4{
+       padding-bottom: 10px;
+   }
+   #about .myself button{
+       background-color: rgb(143, 33, 33);
+       color: white;
+       margin-top: 10px;
+       padding: 5px;
+       border-radius: 20px;
+       outline: none;
+       transition: all 0.1s;
+   }
+   #about .myself  .desc
+   {
+       margin-top: 30px;
+       overflow: hidden;
+   }
+   #about .myself  .desc
+   {
+       width: 95%;
+   }
+   #about .myself button:hover{
+       cursor: pointer;
+       transform: skewY(5deg);
+       background-color: red;
+   }
+   
+   #about .myself .self img
+   {
+       width: 300px;
+       height: 300px;
+       border-radius: 50%;
+       margin-left: 10px;
+   }
+   #services
+   {
+       display: block;
+       margin-top: 10px;
+       width: 95vw;
+       background-color: black;
+       height: auto;
+       padding-top: 30px;
+       padding-bottom: 30px;
+       margin-bottom: 20px;
+   }
+   #services h3{
+       width: 100%;
+       text-align: center;
+       font-family: serif;
+       color: white;
+       margin-bottom: 5px;
+      font-size: 1.6rem;
+       
+   }
+   .serve
+   {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+   }
+   .serve div{
+      display: block;
+      width: 80%;
+      margin-left: 10%;
+      height: 100px;
+      background-color: gray;
+      margin-bottom: 20px;
+      text-align: center;
+      border: 1px solid black;
+   }
+   .paragra
+   {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: white;
+      font-family: 'nunito',sans-serif;
+   }
+   #services h4{
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: purple;
+    font-size: 1.3rem;
+    
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 95vw;
+    height: auto;
+    padding-bottom: 20px;
+    border: 1px solid black;
+    padding-top: 10px;
+}
+.contact .conta
+{
+    margin-top: 10px;
+    
+}
+.contact .conta h4
+{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.contact .conta li{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.contact .conta li span{
+    margin-left: 10px;
+    font-size: 1rem;
+
+}
+.contact form input[type="email"]
+{
+    width: 50%;
+    padding-bottom: 5px;
+    outline: none;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 3.2rem;
+    margin: 10px;
+    font-size: 10px;
+}
+.contact form textarea
+{
+    width: 90%;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.contact form input[type="button"]
+{
+    width: 100px;
+    padding: 5px 5px;
+    border-radius: 30px;
+    outline: none;
+    background-color: rgb(219, 105, 105);
+    cursor: pointer;
+    transition: all 0.2s ;
+}
+.contact form input[type="button"]:hover{
+    transform: rotateX(-30deg);
+    text-transform: uppercase;
+    background-color: yellowgreen;
+}
+
+@media screen and(max-width:1100px) {
+.main
+{ position: relative;
+  margin-left: 10%;
+
+}
+.footer
+{
+    margin-bottom: 10px;
+}
+
+ 
+}
+@keyframes animatebox
+{
+   0%
+   {
+       transform: rotateY(360deg)
+   }
+   100%{
+        transform: rotateY(-0deg);
+   }
+}
+.myskills
+{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    column-gap: 10px;
+    background: rgb(253, 252, 252);
+    margin-left: 30px;
+    width: 90vw;
+    height: auto;
+    padding: 10px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    border-radius: 30px;
+}
+.myskills .skills{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.myskills h3
+{
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.myskills h4{
+    margin-left: 200px;
+    margin-bottom: 10px;
+    width: 100%;
+    color: purple;
+    font-size: 1.2rem;
+}
+.myskills .skills p
+{
+    width: 90%;
+    margin-left: 2%;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+.myskills ul{
+    width: 90%;
+    margin-top: -10px;
+    margin-left: 10px;
+    display: block;
+    height: 90%;
+}
+.myskills ul div{
+    width: 150px;
+    margin-top: 20px;
+    height: 20px;
+    display: block
+    
+}
+.myskills ul span{
+    width: 100px;
+    height: 20px;
+    margin-right: 10px;
+    color: rgb(24, 17, 6);
+    display: block;
+    margin-bottom: 5px;
+    
+}
+.myskills ul input{
+    margin-left: 10px;
+  
+    
+}
+#levels h4{
+    margin-top: -20px;
+}
+@keyframes slide
+{
+    0%
+    {
+        margin-left:-500px;
+    }
+    25%
+    {
+        margin-left:-500px;
+    }
+    50%
+    {
+        margin-left:-500px;
+    }
+    100%
+    {
+        margin-left:-500px;
+    }
+}
+@media  screen and (max-width:700px){
+    .nav-bar
+    {
+        display: inline-flex;
+        background-color: white;
+        position: relative;
+        height: 0px;
+        transition: all 1s;
+        overflow: hidden;
+        margin-top: 10px;
+        margin:0;
+        border-radius: 0;
+        width: 100vw;
+        z-index: 999;
+    }
+    .nav-bar .links
+    {
+        margin-top: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    .nav-bar .links a
+    {
+        display: block;
+        margin-left: 50px;
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding-top: 10px;
+        border-bottom: 1px solid black;
+
+    }
+    .nav-bar .links a:hover
+    {
+      border-bottom: 1px solid green;
+    }
+    #about{
+        margin-left: 20px;
+      
+    }
+    .nav-bar .icons-contacts
+    {
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        width: 100px;
+        height: auto;
+        margin-top: 10px;
+        background-color: transparent
+      
+    }
+    .myskills .skills
+    {
+        display: block;
+    }
+    .nav-bar .icons-contacts img
+    {
+        margin-top: 20px;
+        border-radius: 50%;
+        
+        transition:  all 0.5s;
+    }
+    .nav-bar .icons-contacts img:hover
+    {
+        background-color: white;
+    }
+   
+    .me{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .myskills
+    {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        transition: all 1s ;
+        
+    }
+    .myskills .skills
+    {
+       display: block;
+       height: auto;
+    }
+    #about .myself .self img
+    {
+        width: 250px;
+        height: 250px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .contact
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+    }
+    .contact .conta{
+        display: block;
+        margin-bottom: 20px;
+    }
+    .menu
+    {
+        position: absolute;
+        margin-left: 90vw;
+        margin-top: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(209, 223, 209);
+        z-index: 1000;
+        cursor: pointer;
+    }
+   
+    .menu span
+    {
+        width: 26px;
+        margin-left: 2px;
+        height: 3px;
+        display: block;
+        margin-top: 5px;
+        background-color: black;
+    }
+    #about .myself
+    {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+   .myskills #know
+   {
+       margin-left: 20px;
+   }
+}
+@media screen and (max-width:900px)
+ {
+    .nav-bar .icons-contacts
+    {
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        width: 100px;
+        height: auto;
+        margin-top: 10px;
+        background-color: transparent
+      
+    }
+}
+.fa
+{
+    width: 30px;
+    height: 30px;
+   margin-right: -5px;
+  
+}
+.fa-tasks , .fa-desktop
+{
+    margin-right: 5px;
+    color: blueviolet;
+}

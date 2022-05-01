@@ -1,0 +1,213 @@
+
+*
+{
+margin: 0;
+padding: 0;
+}
+.parent .spinner
+{ position: relative;
+     margin-top: -150px;
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   margin-top: 50%;
+   margin-top: 20px;
+   transition: all 4s;
+}
+.parent  .spinner .spinner1
+{ 
+    position: absolute;
+    clip-path: polygon(50% 50%,0% 25%,0% 50%);
+    width: 200px;
+    height: 200px;
+    background-color: rgb(121, 22, 91);
+    border-radius: 50%;
+    clip-path: polygon(50% 50%,35% 0%,55% 0%);
+}
+.parent  .spinner .spinner2
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(190, 209, 81);
+    border-radius: 50%;
+    clip-path: polygon(50% 50%,10% 0%,35% 0%);
+}
+.spinner .spinner3
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(237, 100, 111);
+    clip-path: polygon(50% 50%,0% 20%,10% 0%);
+    border-radius: 50%;
+}
+.parent  .spinner .spinner4
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,0% 20%,0% 40%);
+    background-color: rgb(196, 157, 32);
+    border-radius: 50%;
+}
+.parent  .spinner .spinner5
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,0% 40%,0% 60%);
+    background-color: rgb(168, 196, 179);
+    border-radius: 50%;
+}
+.parent  .spinner .spinner6
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,0% 60%,0% 85%);
+    background-color: rgb(17, 87, 45);
+    border-radius: 50%;
+}
+.parent .spinner .spinner7
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,0% 85%,15% 100%);
+    background-color: rgb(61, 14, 99);
+    border-radius: 50%;
+}
+.parent  .spinner .spinner8
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,15% 100%,35% 100%);
+    background-color: rgb(28, 199, 96);
+    border-radius: 50%;
+}
+.parent  .spinner .spinner9
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,35% 100%,55% 100%);
+    background-color: rgb(221, 76, 18);
+    border-radius: 50%;
+}
+.parent .spinner .spinner10
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,55% 100%,75% 100%);
+    background-color: rgb(243, 106, 220);
+    border-radius: 50%;
+}
+.parent  .spinner .spinner11
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,75% 100%,100% 100%);
+    background-color: rgb(74, 75, 13);
+    border-radius: 50%;
+}
+.parent  .spinner .spinner12
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,100% 100%,100% 75%);
+    background-color: rgb(28, 199, 96);
+    border-radius: 50%;
+}
+.parent  .spinner .spinner13
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,100% 75%,100% 55%);
+    background-color: rgba(41, 17, 150, 0.397);
+    border-radius: 50%;
+}
+.parent  .spinner .spinner14
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,100% 55%,100% 35%);
+    background-color: rgb(24, 13, 75);
+    border-radius: 50%;
+}
+.spinner .spinner15
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,100% 35%,100% 10%);
+    background-color: rgb(159, 170, 95);
+    border-radius: 50%;
+}
+.parent .spinner .spinner16
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,100% 10%,80% 0%);
+    background-color: rgb(74, 75, 13);
+    border-radius: 50%;
+    background-size: 30%;
+   
+}
+.parent .spinner .spinner17
+{  position: absolute;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 50%,80% 0%,55% 0%);
+    background-color: rgb(173, 72, 131);
+    border-radius: 50%;
+    background-size: 35%;
+}
+.main .parent .pointer
+{  position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    clip-path: polygon(25% 0,75% 0,50% 100%);
+    margin-left: 40%;
+    margin-top: -83%;
+    transition: all 0.2s;
+    background-size:35%;
+}
+ .main .parent
+{  position: relative;
+    width: 250px;
+    height: 250px;
+    
+
+
+}
+.popup
+{
+    
+    width: 100px;
+    height: 150px;
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: rgb(202, 174, 202);
+    margin-top: -200px;
+    margin-left: 200px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.popup p{
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: rgb(109, 37, 37);
+
+}
+.main .parent .control
+{  position: relative;
+    width: 50px;
+    height: 50px;
+    margin-top: 50%;
+    background-color: black;
+    margin-left: 50%;
+    margin-top: -50%;
+    transform: translate(-25px,0px);
+    background-image: -webkit-linear-gradient(left,gray,orange,rgb(237, 100, 111),rgb(81, 30, 221),rgb(221, 76, 18));
+    border-radius: 50%;
+    cursor: pointer;
+}
